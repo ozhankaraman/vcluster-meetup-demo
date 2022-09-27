@@ -6,14 +6,14 @@ spec:
   generators:
     - pullRequest:
         github:
-          owner: mtougeron
+          owner: ozhankaraman
           repo: vcluster-meetup-demo
   template:
     metadata:
       name: 'vcluster-env--{{branch}}--pr-{{number}}'
     spec:
       source:
-        repoURL: 'https://github.com/mtougeron/vcluster-meetup-demo.git'
+        repoURL: 'https://github.com/ozhankaraman/vcluster-meetup-demo.git'
         targetRevision: '{{head_sha}}'
         path: apps/vcluster-env
         helm:
